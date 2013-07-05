@@ -25,9 +25,9 @@ class HistoryEntry {
     private String mBase;
     private String mEdited;
 
-    HistoryEntry(String base, String edited) {
-        mBase = base;
-        mEdited = edited;
+    HistoryEntry(String str) {
+        mBase = str;
+        clearEdited();
     }
 
     HistoryEntry(int version, DataInput in) throws IOException {
